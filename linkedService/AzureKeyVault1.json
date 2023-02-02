@@ -5,7 +5,7 @@
 		"annotations": [],
 		"type": "AzureKeyVault",
 		"typeProperties": {
-			"baseUrl": "https://project1keyvault2real.vault.azure.net/"
+			"baseUrl": "${{ secrets.ADF_PROJECT_KEY_VAULT_URL}}"
 		}
 	}
 }
