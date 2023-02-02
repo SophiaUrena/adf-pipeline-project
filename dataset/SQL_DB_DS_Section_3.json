@@ -1,0 +1,48 @@
+{
+	"name": "SQL_DB_DS_Section_3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQL_DB_DS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "VehicleID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "latitude",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "longitude",
+				"type": "decimal",
+				"precision": 18,
+				"scale": 0
+			},
+			{
+				"name": "City",
+				"type": "nvarchar"
+			},
+			{
+				"name": "temperature",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "speed",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "VehicleData1"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

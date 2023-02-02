@@ -1,0 +1,24 @@
+{
+	"name": "trigger_project1_2real",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "StagingToSQL",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/input/blobs/staging/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/6c95a4c5-9b6d-411c-a142-023d58b4e049/resourceGroups/project1/providers/Microsoft.Storage/storageAccounts/azurestgproject",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"name": "Azure_DL_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Azure_Data_Lake_LS",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"landingFolder": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@dataset().landingFolder",
+					"type": "Expression"
+				},
+				"fileSystem": "input"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
