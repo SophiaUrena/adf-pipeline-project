@@ -1,0 +1,12 @@
+{
+	"name": "ADLS_GEN2_LS_Section_3",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "${{ secrets.ADF_PROJECT_LINKEDSERVICE_ADLS_URL}}",
+			"encryptedCredential": "${{ secrets.ADF_PROJECT_LINKEDSERVICE_ADLS_CREDENTIAL}}"
+		}
+	}
+}

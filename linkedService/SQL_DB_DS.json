@@ -1,0 +1,12 @@
+{
+	"name": "SQL_DB_DS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=project1dbserver2.database.windows.net;initial catalog=azuredbproject1;user id=sophiaurena",
+			"encryptedCredential": "${{ secrets.ADF_PROJECT_LINKEDSERVICE_SQLDB_CREDENTIAL }}"
+		}
+	}
+}

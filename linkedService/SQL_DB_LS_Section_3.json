@@ -1,0 +1,13 @@
+{
+	"name": "SQL_DB_LS_Section_3",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "This is the linked service which connect to sample azure SQL db",
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "integrated security=False;encrypt=True;connection timeout=30;data source=project1dbserver2.database.windows.net;initial catalog=azuredbproject1;user id=sophiaurena",
+			"encryptedCredential": "${{ secrets.ADF_PROJECT_SQLDB_CREDENTIAL }}"
+		}
+	}
+}

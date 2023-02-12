@@ -1,0 +1,24 @@
+{
+	"name": "trigger_project1_2real",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "StagingToSQL",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/input/blobs/staging/",
+			"ignoreEmptyBlobs": true,
+			"scope": "${{ secrets.ADF_PROJECT_STAGING_TRIGGER }}",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

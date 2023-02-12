@@ -1,0 +1,17 @@
+{
+	"name": "Storage_Trigger_For_json",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/input/blobs/input/staging/",
+			"ignoreEmptyBlobs": true,
+			"scope": "${{ secrets.ADF_PROJECT_STORAGE_TRIGGER }}",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

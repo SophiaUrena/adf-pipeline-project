@@ -1,0 +1,13 @@
+{
+	"name": "Azure_Data_Lake_LS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "This is to connect to the storage account ",
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "${{ secrets.ADF_PROJECT_LINKEDSERVICE_CONNECTION_URL }}",
+			"encryptedCredential": "${{ secrets.ADF_PROJECT_LINKEDSERVICE_CONNECTION_CREDENTIAL }}"
+		}
+	}
+}

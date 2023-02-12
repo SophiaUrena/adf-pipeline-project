@@ -1,0 +1,9 @@
+{
+	"name": "azureadfproject2real",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "${{ secrets.ADF_PROJECT_PRINCIPAL_ID}}",
+		"tenantId": "${{ secrets.ADF_PROJECT_TENANT_ID}}"
+	}
+}
