@@ -20,3 +20,19 @@ Strategy Inspired by Udemy Course: 2 Real World Azure Data Engineer Project End 
 - Another Azure Data Factory Copy Pipeline was used to extract files from the staging folder and load the files into Azure SQL Server
 - Azure Key Vault stored secrets, including access and secret acess keys used thoughout the project
 - Project triggers when the first pipeline is manually triggered
+
+# Data Analytics with PowerBI Desktop
+
+The goal of this project was to load data to Power BI from different databases to create a Dashboard for data analysis. The dashboard represents the average speed of several vehicles and their location around the world
+
+# Project Setup
+
+- Data from different databases was uploaded into PowerBI Desktop
+- Visualization tools including world map, gauge, and slicer were utilized for data analytics
+  - World map displays the city location of each vehicle
+  - Gauge displays the average speed of all the vehicles
+    - When vehicle or country is selected the gauge shows the average vehicle of selected item
+  - Vehicle ID slicer allows users to select a vehicle to analyze or displays vehicles located within the same country
+  - Countries slicer allows users to select a country to analyze
+
+![Screenshot 2023-02-05 101644](https://user-images.githubusercontent.com/121827505/216827911-68370d05-c55f-4dd8-b8dd-3155da65a74b.png)
